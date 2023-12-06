@@ -1,7 +1,57 @@
 import type { NextPage } from "next";
+import {  Navbar,   NavbarBrand,   NavbarContent,   NavbarItem,   NavbarMenuToggle,  NavbarMenu,  NavbarMenuItem} from "@nextui-org/react";
+import Link from 'next/link';
+import {Button, ButtonGroup} from "@nextui-org/react";
+
 
 const UpBusiness: NextPage = () => {
   return (
+    <div>
+      <Navbar shouldHideOnScroll style={{background:'black'}}>
+      <NavbarBrand>
+      <img
+          style={{
+            position: "relative",
+            width: "43px",
+            height: "43px",
+            overflow: "hidden",
+            flexShrink: "0",
+          }}
+          alt=""
+          src="/arrowup.svg"
+        />
+      <div style={{ position: "relative", fontWeight: "600", color: "#ffffff" }}>
+          BIZNALYTIX
+        </div>
+      </NavbarBrand>
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarItem>
+        <Button as={Link} color="primary" href="/dashboard" variant="light">
+            Dashboard
+          </Button>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link href="#" aria-current="page">
+            SCM
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Integrations
+          </Link>
+        </NavbarItem>
+      </NavbarContent>
+      <NavbarContent justify="end">
+        <NavbarItem className="hidden lg:flex">
+          <Link href="#">Login</Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Button as={Link} color="primary" href="#" variant="flat">
+            Sign Up
+          </Button>
+        </NavbarItem>
+      </NavbarContent>
+    </Navbar>
     <div
       style={{
         borderRadius: "48px",
@@ -14,6 +64,8 @@ const UpBusiness: NextPage = () => {
         fontFamily: "Inter",
       }}
     >
+      
+
       <div
         style={{
           position: "absolute",
@@ -27,22 +79,10 @@ const UpBusiness: NextPage = () => {
           color: "#ffffff", // Change font color to white
         }}
       >
-        <img
-          style={{
-            position: "relative",
-            width: "43px",
-            height: "43px",
-            overflow: "hidden",
-            flexShrink: "0",
-          }}
-          alt=""
-          src="/arrowup.svg"
-        />
-        <div style={{ position: "relative", fontWeight: "600", color: "#ffffff" }}> // Change font color to white
-          UP BUSINESS
-        </div>
+        
+        
       </div>
-      <div style={{ position: "absolute", top: "89px", right: "317px" }} />
+      
       <div
         style={{
           position: "absolute",
@@ -64,57 +104,6 @@ const UpBusiness: NextPage = () => {
             backgroundColor: "#7c76bb",
           }}
         />
-        <div
-          style={{
-            position: "absolute",
-            top: "17px",
-            left: "484px",
-            fontWeight: "500",
-          }}
-        >
-          Pricing
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            top: "17px",
-            left: "326px",
-            fontWeight: "500",
-          }}
-        >
-          Our team
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            top: "17px",
-            left: "125px",
-            fontWeight: "500",
-          }}
-        >
-          How we work
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            top: "17px",
-            left: "656px",
-            fontWeight: "600",
-            color: "#fff",
-          }}
-        >
-          Book a call
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            top: "17px",
-            left: "0px",
-            fontWeight: "500",
-          }}
-        >
-          Home
-        </div>
       </div>
       <div
         style={{
@@ -2425,6 +2414,7 @@ const UpBusiness: NextPage = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
