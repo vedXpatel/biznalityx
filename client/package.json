@@ -13,6 +13,7 @@
     "@kinde-oss/kinde-auth-nextjs": "^2.0.10",
     "@nextui-org/react": "^2.2.9",
     "@react-google-maps/api": "^2.19.2",
+    "axios": "^1.6.2",
     "framer-motion": "^10.16.14",
     "google-map-react": "^2.2.1",
     "next": "^14.0.3",

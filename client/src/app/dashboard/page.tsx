@@ -3,6 +3,7 @@ import Map from "../../components/map";
 import Stats from "../../components/stats";
 import {Input, Button} from "@nextui-org/react";
 import bg from '../../../public/images/dashboardBG.png';
+import Link from 'next/link';
 
 export default function Dashboard() {
     return (
@@ -31,7 +32,7 @@ export default function Dashboard() {
                         fontSize: '20px',
                         margin: 15,
                     }}>Dashboard</Button>
-                    <Button variant='light' color='danger' style={{
+                    <Button as={Link} href='/properties' variant='light' color='danger' style={{
                         borderRadius: '30px',
                         height: '7vh',
                         fontSize: '20px',
