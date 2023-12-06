@@ -2,6 +2,7 @@
 import Map from "../../components/map";
 import Stats from "../../components/stats";
 import {Input, Button} from "@nextui-org/react";
+import bg from '../../../public/images/dashboardBG.png';
 
 export default function Dashboard() {
     return (
@@ -19,18 +20,44 @@ export default function Dashboard() {
                         left: 0,
                         borderTopRightRadius: 20,
                         borderBottomRightRadius: 20,
-                        paddingTop:'10%'
+                        paddingTop: '10%'
                     }}
                 >
-                    <Button variant='light' color='danger' style={{borderRadius:'30px',height:'7vh',fontSize:'20px',margin:15,}}>Home</Button>
-                   <Button variant='shadow' color='danger' style={{borderRadius:'30px',height:'7vh',fontSize:'20px',margin:15,}}>Dashboard</Button>
-                    <Button variant='light' color='danger' style={{borderRadius:'30px',height:'7vh',fontSize:'20px',margin:15,}}>Properties</Button>
-                    <Button variant='light' color='danger' style={{borderRadius:'30px',height:'7vh',fontSize:'20px',margin:15,}}>SCM</Button>
-                    <Button variant='light' color='danger' style={{position:"relative",top:"30%",borderRadius:'30px',height:'7vh',fontSize:'20px',margin:15,}}>LogOut</Button>
+                    <Button variant='light' color='danger'
+                            style={{borderRadius: '30px', height: '7vh', fontSize: '20px', margin: 15,}}>Home</Button>
+                    <Button variant='shadow' color='danger' style={{
+                        borderRadius: '30px',
+                        height: '7vh',
+                        fontSize: '20px',
+                        margin: 15,
+                    }}>Dashboard</Button>
+                    <Button variant='light' color='danger' style={{
+                        borderRadius: '30px',
+                        height: '7vh',
+                        fontSize: '20px',
+                        margin: 15,
+                    }}>Properties</Button>
+                    <Button variant='light' color='danger'
+                            style={{borderRadius: '30px', height: '7vh', fontSize: '20px', margin: 15,}}>SCM</Button>
+                    <Button variant='light' color='danger' style={{
+                        position: "relative",
+                        top: "30%",
+                        borderRadius: '30px',
+                        height: '7vh',
+                        fontSize: '20px',
+                        margin: 15,
+                    }}>LogOut</Button>
                 </div>
                 <div className=""
-                     style={{display: "flex", flexDirection: 'column', width: '100%', paddingBottom: '20px'}}>
-                    <div className="input" style={{paddingLeft:'50px',paddingRight:'50px',marginTop:'20px',marginBottom:'20px'}}>
+                     style={{
+                         display: "flex",
+                         flexDirection: 'column',
+                         width: '100%',
+                         paddingBottom: '20px',
+                         background: `url(${bg.src})`
+                     }}>
+                    <div className="input"
+                         style={{paddingLeft: '50px', paddingRight: '50px', marginTop: '20px', marginBottom: '20px'}}>
                         <Input
                             label="Search"
                             isClearable
@@ -85,7 +112,13 @@ export default function Dashboard() {
                             }
                         />
                     </div>
-                    <div className="" style={{display: 'flex', flexDirection: "row", padding: '10px',alignItems:'center',marginLeft:'2vw'}}>
+                    <div className="" style={{
+                        display: 'flex',
+                        flexDirection: "row",
+                        padding: '10px',
+                        alignItems: 'center',
+                        marginLeft: '2vw'
+                    }}>
                         <Stats title='Total Stores' data={350}/>
                         <Stats title='Total Population' data={10000000}/>
                         <Stats title='Average Income' data={500000}/>
