@@ -4,16 +4,14 @@ const UpBusiness: NextPage = () => {
   return (
     <div
       style={{
-        position: "relative",
         borderRadius: "48px",
-        backgroundColor: "#fff",
-        width: "100%",
+        backgroundColor: "#000000",
         height: "9517px",
         overflow: "hidden",
         textAlign: "left",
         fontSize: "24px",
-        color: "#7c76bb",
-        fontFamily: "'SF Pro Display'",
+        color: "#ffffff", // Change font color to white
+        fontFamily: "Inter",
       }}
     >
       <div
@@ -26,6 +24,7 @@ const UpBusiness: NextPage = () => {
           alignItems: "flex-start",
           justifyContent: "flex-start",
           fontSize: "36px",
+          color: "#ffffff", // Change font color to white
         }}
       >
         <img
@@ -39,7 +38,7 @@ const UpBusiness: NextPage = () => {
           alt=""
           src="/arrowup.svg"
         />
-        <div style={{ position: "relative", fontWeight: "600" }}>
+        <div style={{ position: "relative", fontWeight: "600", color: "#ffffff" }}> // Change font color to white
           UP BUSINESS
         </div>
       </div>
@@ -175,7 +174,7 @@ const UpBusiness: NextPage = () => {
           alignItems: "flex-start",
           justifyContent: "flex-start",
           gap: "48px",
-          fontSize: "100px",
+          fontSize: "90px",
         }}
       >
         <div
@@ -1648,14 +1647,14 @@ const UpBusiness: NextPage = () => {
                   adipiscing.
                 </span>
                 <span
-                  style={{ lineHeight: "0%", fontFamily: "'SF Pro Display'" }}
+                  style={{ lineHeight: "0%", fontFamily: "Inter" }}
                 >{` `}</span>
               </span>
               <span
                 style={{
                   lineHeight: "148.34%",
                   fontWeight: "600",
-                  fontFamily: "'SF Pro Display'",
+                  fontFamily: "Inter",
                   color: "#7c76bb",
                 }}
               >
