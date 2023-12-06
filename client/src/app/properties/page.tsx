@@ -13,8 +13,8 @@ export default function Properties() {
             address: '5500 Grand Lake Dr, San Antonio, TX, 78244'
         },
         headers: {
-            'X-RapidAPI-Key': '6c1fe4c821msh8b654637670d234p19ad34jsn6d6450f1ed46',
-            'X-RapidAPI-Host': 'realty-mole-property-api.p.rapidapi.com'
+            'X-RapidAPI-Key': process.env.NEXT_PUBLIC_API_KEY as string,
+            'X-RapidAPI-Host': process.env.NEXT_PUBLIC_API_HOST as string,
         }
     };
 
