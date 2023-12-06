@@ -43,45 +43,78 @@ const UpBusiness: NextPage = () => {
           UP BUSINESS
         </div>
       </div>
+      <div style={{ position: "absolute", top: "89px", right: "317px" }} />
       <div
         style={{
           position: "absolute",
-          top: "89px",
-          right: "317px",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
-          gap: "62px",
-        }}
-      >
-        <div style={{ position: "relative", fontWeight: "500" }}>Home</div>
-        <div style={{ position: "relative", fontWeight: "500" }}>
-          How we work
-        </div>
-        <div style={{ position: "relative", fontWeight: "500" }}>Our team</div>
-        <div style={{ position: "relative", fontWeight: "500" }}>Pricing</div>
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          width: "calc(100% - 1744px)",
+          width: "calc(100% - 1119px)",
           top: "72px",
           right: "72px",
-          left: "1672px",
-          borderRadius: "12px",
-          backgroundColor: "#7c76bb",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "flex-start",
-          justifyContent: "space-between",
-          padding: "17px",
-          boxSizing: "border-box",
-          color: "#fff",
+          left: "1047px",
+          height: "63px",
         }}
       >
-        <div style={{ position: "relative", fontWeight: "600" }}>
+        <div
+          style={{
+            position: "absolute",
+            width: "calc(100% - 625px)",
+            top: "0px",
+            right: "0px",
+            left: "625px",
+            borderRadius: "12px",
+            backgroundColor: "#7c76bb",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: "17px",
+            left: "484px",
+            fontWeight: "500",
+          }}
+        >
+          Pricing
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            top: "17px",
+            left: "326px",
+            fontWeight: "500",
+          }}
+        >
+          Our team
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            top: "17px",
+            left: "125px",
+            fontWeight: "500",
+          }}
+        >
+          How we work
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            top: "17px",
+            left: "656px",
+            fontWeight: "600",
+            color: "#fff",
+          }}
+        >
           Book a call
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            top: "17px",
+            left: "0px",
+            fontWeight: "500",
+          }}
+        >
+          Home
         </div>
       </div>
       <div
@@ -91,7 +124,7 @@ const UpBusiness: NextPage = () => {
           left: "-164px",
           borderRadius: "50%",
           backgroundColor: "rgba(220, 240, 255, 0.25)",
-          backdropFilter: "blur(12px)",
+          // backdropFilter: "blur(12px)",
           width: "467px",
           height: "467px",
         }}
@@ -103,7 +136,7 @@ const UpBusiness: NextPage = () => {
           left: "866px",
           borderRadius: "50%",
           backgroundColor: "rgba(220, 240, 255, 0.25)",
-          backdropFilter: "blur(12px)",
+          // backdropFilter: "blur(12px)",
           width: "234px",
           height: "234px",
         }}
@@ -115,7 +148,7 @@ const UpBusiness: NextPage = () => {
           left: "1520px",
           borderRadius: "50%",
           backgroundColor: "rgba(220, 240, 255, 0.25)",
-          backdropFilter: "blur(12px)",
+          // backdropFilter: "blur(12px)",
           width: "345px",
           height: "345px",
         }}
@@ -125,7 +158,7 @@ const UpBusiness: NextPage = () => {
           position: "absolute",
           top: "135px",
           left: "757px",
-          width: "1184px",
+          width: "1160px",
           height: "888px",
           objectFit: "cover",
         }}
@@ -386,8 +419,8 @@ const UpBusiness: NextPage = () => {
         style={{
           position: "absolute",
           top: "1435px",
-          left: "-57px",
-          width: "2034px",
+          left: "0px",
+          width: "1920px",
           height: "790px",
           color: "#ff87b0",
         }}
@@ -399,8 +432,8 @@ const UpBusiness: NextPage = () => {
             left: "0px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "323px",
+            // backdropFilter: "blur(12px)",
+            width: "304.9px",
             height: "323px",
           }}
         />
@@ -408,7 +441,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "153px",
-            left: "201px",
+            left: "189.73px",
+            width: "812.74px",
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
@@ -562,11 +596,11 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "323px",
-            left: "1567px",
+            left: "1479.18px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "467px",
+            // backdropFilter: "blur(12px)",
+            width: "440.83px",
             height: "467px",
           }}
         />
@@ -574,8 +608,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "0px",
-            left: "1018px",
-            width: "953px",
+            left: "960.94px",
+            width: "899.59px",
             height: "715px",
             objectFit: "cover",
           }}
@@ -588,7 +622,7 @@ const UpBusiness: NextPage = () => {
           position: "absolute",
           top: "2307px",
           left: "0px",
-          width: "1839px",
+          width: "1920px",
           height: "568px",
           color: "#ff87b0",
         }}
@@ -597,11 +631,11 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "15px",
-            left: "541px",
+            left: "564.83px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "349px",
+            // backdropFilter: "blur(12px)",
+            width: "364.37px",
             height: "349px",
           }}
         />
@@ -610,7 +644,7 @@ const UpBusiness: NextPage = () => {
             position: "absolute",
             top: "0px",
             left: "0px",
-            width: "975px",
+            width: "1017.94px",
             height: "568px",
             objectFit: "cover",
           }}
@@ -621,11 +655,11 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "284px",
-            left: "1582px",
+            left: "1651.68px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "247px",
+            // backdropFilter: "blur(12px)",
+            width: "257.88px",
             height: "247px",
           }}
         />
@@ -633,7 +667,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "97px",
-            left: "1008px",
+            left: "1052.4px",
+            width: "867.6px",
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
@@ -788,8 +823,8 @@ const UpBusiness: NextPage = () => {
         style={{
           position: "absolute",
           top: "3082px",
-          left: "30px",
-          width: "1859px",
+          left: "0px",
+          width: "1920px",
           height: "688px",
           color: "#ff87b0",
         }}
@@ -801,8 +836,8 @@ const UpBusiness: NextPage = () => {
             left: "0px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "244px",
+            // backdropFilter: "blur(12px)",
+            width: "252.01px",
             height: "244px",
           }}
         />
@@ -810,7 +845,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "140px",
-            left: "110px",
+            left: "113.61px",
+            width: "858.27px",
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
@@ -964,11 +1000,11 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "37px",
-            left: "1032px",
+            left: "1065.86px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "391px",
+            // backdropFilter: "blur(12px)",
+            width: "403.83px",
             height: "391px",
           }}
         />
@@ -976,8 +1012,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "0px",
-            left: "941px",
-            width: "918px",
+            left: "971.88px",
+            width: "948.12px",
             height: "688px",
             objectFit: "cover",
           }}
@@ -990,7 +1026,7 @@ const UpBusiness: NextPage = () => {
           position: "absolute",
           top: "3906px",
           left: "0px",
-          width: "1844px",
+          width: "1920px",
           height: "676px",
           color: "#ff87b0",
         }}
@@ -999,11 +1035,11 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "113px",
-            left: "421px",
+            left: "438.35px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "415px",
+            // backdropFilter: "blur(12px)",
+            width: "432.1px",
             height: "415px",
           }}
         />
@@ -1012,7 +1048,7 @@ const UpBusiness: NextPage = () => {
             position: "absolute",
             top: "0px",
             left: "0px",
-            width: "998px",
+            width: "1039.13px",
             height: "676px",
             objectFit: "cover",
           }}
@@ -1023,7 +1059,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "134px",
-            left: "1008px",
+            left: "1049.54px",
+            width: "870.46px",
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
@@ -1191,7 +1228,7 @@ const UpBusiness: NextPage = () => {
             left: "724.11px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
+            // backdropFilter: "blur(12px)",
             width: "215.21px",
             height: "215.21px",
             transform: " rotate(34.57deg)",
@@ -1234,7 +1271,7 @@ const UpBusiness: NextPage = () => {
           position: "absolute",
           top: "5089px",
           left: "52px",
-          width: "1859px",
+          width: "1869px",
           height: "860px",
           textAlign: "center",
           fontSize: "36px",
@@ -1245,7 +1282,7 @@ const UpBusiness: NextPage = () => {
             position: "absolute",
             top: "0px",
             left: "0px",
-            width: "549px",
+            width: "551.95px",
             height: "860px",
           }}
         >
@@ -1253,11 +1290,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "0px",
-              left: "20px",
+              left: "20.11px",
               borderRadius: "34px",
               backgroundColor: "rgba(39, 163, 255, 0.16)",
               boxShadow: "0px 14px 37px -10px rgba(178, 178, 178, 0.17)",
-              width: "509px",
+              width: "511.74px",
               height: "860px",
             }}
           />
@@ -1265,9 +1302,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "485px",
-              left: "128px",
+              left: "128.69px",
               fontWeight: "600",
               textAlign: "left",
+              display: "inline-block",
+              width: "293.57px",
             }}
           >
             Web depelopment
@@ -1276,11 +1315,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "579px",
-              left: "56px",
+              left: "56.3px",
               fontSize: "24px",
               color: "rgba(0, 0, 0, 0.61)",
               display: "inline-block",
-              width: "437px",
+              width: "439.35px",
               height: "125px",
             }}
           >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. `}</div>
@@ -1288,11 +1327,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "748px",
-              left: "203px",
+              left: "204.09px",
               borderRadius: "13px",
               border: "2px solid #7c76bb",
               boxSizing: "border-box",
-              width: "142px",
+              width: "142.76px",
               height: "47px",
               display: "flex",
               flexDirection: "row",
@@ -1311,7 +1350,7 @@ const UpBusiness: NextPage = () => {
               position: "absolute",
               top: "35px",
               left: "0px",
-              width: "549px",
+              width: "551.95px",
               height: "412px",
               objectFit: "cover",
             }}
@@ -1323,8 +1362,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "0px",
-            left: "575px",
-            width: "660px",
+            left: "578.09px",
+            width: "663.55px",
             height: "860px",
           }}
         >
@@ -1332,11 +1371,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "0px",
-              left: "77px",
+              left: "77.41px",
               borderRadius: "34px",
               backgroundColor: "rgba(39, 163, 255, 0.16)",
               boxShadow: "0px 14px 37px -10px rgba(178, 178, 178, 0.17)",
-              width: "509px",
+              width: "511.74px",
               height: "860px",
             }}
           />
@@ -1344,9 +1383,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "485px",
-              left: "168px",
+              left: "168.9px",
               fontWeight: "600",
               textAlign: "left",
+              display: "inline-block",
+              width: "328.76px",
             }}
           >
             Mobile depelopment
@@ -1355,11 +1396,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "579px",
-              left: "111px",
+              left: "111.6px",
               fontSize: "24px",
               color: "rgba(0, 0, 0, 0.61)",
               display: "inline-block",
-              width: "437px",
+              width: "439.35px",
               height: "125px",
             }}
           >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. `}</div>
@@ -1367,11 +1408,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "748px",
-              left: "261px",
+              left: "262.4px",
               borderRadius: "13px",
               border: "2px solid #7c76bb",
               boxSizing: "border-box",
-              width: "142px",
+              width: "142.76px",
               height: "47px",
               display: "flex",
               flexDirection: "row",
@@ -1390,7 +1431,7 @@ const UpBusiness: NextPage = () => {
               position: "absolute",
               top: "7px",
               left: "0px",
-              width: "660px",
+              width: "663.55px",
               height: "495px",
               objectFit: "cover",
             }}
@@ -1402,8 +1443,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "0px",
-            left: "1219px",
-            width: "640px",
+            left: "1225.56px",
+            width: "643.44px",
             height: "860px",
           }}
         >
@@ -1411,11 +1452,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "0px",
-              left: "65px",
+              left: "65.35px",
               borderRadius: "34px",
               backgroundColor: "rgba(39, 163, 255, 0.16)",
               boxShadow: "0px 14px 37px -10px rgba(178, 178, 178, 0.17)",
-              width: "509px",
+              width: "511.74px",
               height: "860px",
             }}
           />
@@ -1423,9 +1464,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "485px",
-              left: "199px",
+              left: "200.07px",
               fontWeight: "600",
               textAlign: "left",
+              display: "inline-block",
+              width: "242.3px",
             }}
           >
             Product design
@@ -1434,11 +1477,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "579px",
-              left: "101px",
+              left: "101.54px",
               fontSize: "24px",
               color: "rgba(0, 0, 0, 0.61)",
               display: "inline-block",
-              width: "437px",
+              width: "439.35px",
               height: "125px",
             }}
           >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. `}</div>
@@ -1446,11 +1489,11 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "748px",
-              left: "254px",
+              left: "255.37px",
               borderRadius: "13px",
               border: "2px solid #7c76bb",
               boxSizing: "border-box",
-              width: "142px",
+              width: "142.76px",
               height: "47px",
               display: "flex",
               flexDirection: "row",
@@ -1469,7 +1512,7 @@ const UpBusiness: NextPage = () => {
               position: "absolute",
               top: "0px",
               left: "0px",
-              width: "640px",
+              width: "643.44px",
               height: "480px",
               objectFit: "cover",
             }}
@@ -1496,7 +1539,7 @@ const UpBusiness: NextPage = () => {
             left: "292.47px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
+            // backdropFilter: "blur(12px)",
             width: "288.1px",
             height: "288.1px",
             transform: " rotate(34.57deg)",
@@ -1510,7 +1553,7 @@ const UpBusiness: NextPage = () => {
             left: "183.12px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
+            // backdropFilter: "blur(12px)",
             width: "167.64px",
             height: "167.64px",
             transform: " rotate(34.57deg)",
@@ -1525,8 +1568,8 @@ const UpBusiness: NextPage = () => {
         style={{
           position: "absolute",
           top: "6418px",
-          left: "-117px",
-          width: "2060.45px",
+          left: "0px",
+          width: "1920px",
           height: "1336.99px",
           color: "rgba(0, 0, 0, 0.61)",
         }}
@@ -1535,15 +1578,17 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "239px",
-            left: "903px",
+            left: "841.45px",
             borderRadius: "24px",
             backgroundColor: "rgba(220, 240, 255, 0.04)",
             boxShadow: "0px 14px 37px -10px rgba(178, 178, 178, 0.17)",
+            width: "984.95px",
             display: "flex",
             flexDirection: "row",
             alignItems: "flex-start",
             justifyContent: "flex-start",
             padding: "66px",
+            boxSizing: "border-box",
             gap: "36px",
           }}
         >
@@ -1623,8 +1668,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "0px",
-            left: "117px",
-            width: "1063px",
+            left: "0px",
+            width: "990.54px",
             height: "797px",
             objectFit: "cover",
           }}
@@ -1635,13 +1680,13 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "559px",
-            left: "1919.28px",
+            left: "1788.45px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "171.45px",
-            height: "171.45px",
-            transform: " rotate(34.57deg)",
+            // backdropFilter: "blur(12px)",
+            width: "163.61px",
+            height: "167.77px",
+            transform: " rotate(36.48deg)",
             transformOrigin: "0 0",
           }}
         />
@@ -1649,8 +1694,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "101px",
-            left: "903px",
-            width: "95.33px",
+            left: "841.45px",
+            width: "88.83px",
             height: "95.33px",
             overflow: "hidden",
           }}
@@ -1661,8 +1706,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "621px",
-            left: "1846px",
-            width: "95.33px",
+            left: "1720.16px",
+            width: "88.83px",
             height: "95.33px",
             overflow: "hidden",
           }}
@@ -1673,13 +1718,13 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "744px",
-            left: "855.38px",
+            left: "797.07px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "376.07px",
-            height: "376.07px",
-            transform: " rotate(34.57deg)",
+            // backdropFilter: "blur(12px)",
+            width: "358.88px",
+            height: "368.01px",
+            transform: " rotate(36.48deg)",
             transformOrigin: "0 0",
           }}
         />
@@ -1687,13 +1732,13 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "948px",
-            left: "1827.13px",
+            left: "1702.58px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "234.64px",
-            height: "234.64px",
-            transform: " rotate(34.57deg)",
+            // backdropFilter: "blur(12px)",
+            width: "223.92px",
+            height: "229.61px",
+            transform: " rotate(36.48deg)",
             transformOrigin: "0 0",
           }}
         />
@@ -1701,13 +1746,13 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "1069px",
-            left: "248.32px",
+            left: "231.4px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "192.68px",
-            height: "192.68px",
-            transform: " rotate(34.57deg)",
+            // backdropFilter: "blur(12px)",
+            width: "183.88px",
+            height: "188.55px",
+            transform: " rotate(36.48deg)",
             transformOrigin: "0 0",
           }}
         />
@@ -1715,8 +1760,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "849px",
-            left: "257px",
-            width: "1684px",
+            left: "239.48px",
+            width: "1569.21px",
             height: "382px",
           }}
         >
@@ -1727,7 +1772,7 @@ const UpBusiness: NextPage = () => {
               left: "0px",
               borderRadius: "200px",
               backgroundColor: "#f6de9d",
-              width: "125px",
+              width: "116.48px",
               height: "125px",
               overflow: "hidden",
             }}
@@ -1756,7 +1801,7 @@ const UpBusiness: NextPage = () => {
               top: "157px",
               left: "0px",
               display: "inline-block",
-              width: "440px",
+              width: "410.01px",
               height: "225px",
             }}
           >
@@ -1777,9 +1822,9 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "157px",
-              left: "622px",
+              left: "579.6px",
               display: "inline-block",
-              width: "440px",
+              width: "410.01px",
               height: "225px",
             }}
           >
@@ -1800,9 +1845,9 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "157px",
-              left: "1244px",
+              left: "1159.2px",
               display: "inline-block",
-              width: "440px",
+              width: "410.01px",
               height: "225px",
             }}
           >
@@ -1823,10 +1868,10 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "0px",
-              left: "622px",
+              left: "579.6px",
               borderRadius: "200px",
               backgroundColor: "rgba(255, 135, 176, 0.85)",
-              width: "125px",
+              width: "116.48px",
               height: "125px",
               overflow: "hidden",
             }}
@@ -1853,10 +1898,10 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "0px",
-              left: "1244px",
+              left: "1159.2px",
               borderRadius: "200px",
               backgroundColor: "#ada8d6",
-              width: "125px",
+              width: "116.48px",
               height: "125px",
               overflow: "hidden",
             }}
@@ -1930,7 +1975,7 @@ const UpBusiness: NextPage = () => {
             left: "1015.05px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
+            // backdropFilter: "blur(12px)",
             width: "262.01px",
             height: "262.01px",
             transform: " rotate(34.57deg)",
@@ -1947,7 +1992,7 @@ const UpBusiness: NextPage = () => {
             left: "237.85px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
+            // backdropFilter: "blur(12px)",
             width: "419.21px",
             height: "419.21px",
             transform: " rotate(34.57deg)",
@@ -2002,8 +2047,8 @@ const UpBusiness: NextPage = () => {
         style={{
           position: "absolute",
           top: "8801px",
-          left: "-74px",
-          width: "2132.1px",
+          left: "0px",
+          width: "1920px",
           height: "865.1px",
         }}
       >
@@ -2011,7 +2056,7 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "33px",
-            left: "74px",
+            left: "0px",
             backgroundColor: "#f6fbff",
             width: "1920px",
             height: "683px",
@@ -2021,13 +2066,13 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "0px",
-            left: "511.57px",
+            left: "460.68px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "274.19px",
-            height: "274.19px",
-            transform: " rotate(34.57deg)",
+            // backdropFilter: "blur(12px)",
+            width: "256.01px",
+            height: "265.71px",
+            transform: " rotate(37.42deg)",
             transformOrigin: "0 0",
           }}
         />
@@ -2035,13 +2080,13 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "329px",
-            left: "1321.16px",
+            left: "1189.73px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "130.7px",
-            height: "130.7px",
-            transform: " rotate(34.57deg)",
+            // backdropFilter: "blur(12px)",
+            width: "122.04px",
+            height: "126.66px",
+            transform: " rotate(37.42deg)",
             transformOrigin: "0 0",
           }}
         />
@@ -2049,13 +2094,13 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "405px",
-            left: "1859.7px",
+            left: "1674.69px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "330.81px",
-            height: "330.81px",
-            transform: " rotate(34.57deg)",
+            // backdropFilter: "blur(12px)",
+            width: "308.88px",
+            height: "320.58px",
+            transform: " rotate(37.42deg)",
             transformOrigin: "0 0",
           }}
         />
@@ -2063,13 +2108,13 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "535px",
-            left: "115.72px",
+            left: "104.21px",
             borderRadius: "50%",
             backgroundColor: "rgba(220, 240, 255, 0.25)",
-            backdropFilter: "blur(12px)",
-            width: "203.95px",
-            height: "203.95px",
-            transform: " rotate(34.57deg)",
+            // backdropFilter: "blur(12px)",
+            width: "190.43px",
+            height: "197.65px",
+            transform: " rotate(37.42deg)",
             transformOrigin: "0 0",
           }}
         />
@@ -2077,7 +2122,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "162px",
-            left: "1573px",
+            left: "1416.52px",
+            width: "287.27px",
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
@@ -2131,7 +2177,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "162px",
-            left: "1118px",
+            left: "1006.78px",
+            width: "309.78px",
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
@@ -2224,7 +2271,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "162px",
-            left: "834px",
+            left: "751.03px",
+            width: "104.46px",
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
@@ -2261,8 +2309,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "652px",
-            left: "797px",
-            width: "473px",
+            left: "717.71px",
+            width: "425.95px",
             height: "27px",
             fontSize: "20px",
             color: "rgba(0, 0, 0, 0.61)",
@@ -2275,7 +2323,7 @@ const UpBusiness: NextPage = () => {
               left: "0px",
               fontWeight: "500",
               display: "inline-block",
-              width: "473px",
+              width: "425.95px",
               height: "27px",
             }}
           >{` © 2021 Up Business by AbellVo | All Rights Reserved `}</div>
@@ -2284,8 +2332,8 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "156px",
-            left: "198px",
-            width: "459px",
+            left: "178.3px",
+            width: "413.34px",
             height: "228px",
             fontSize: "20px",
             color: "rgba(0, 0, 0, 0.61)",
@@ -2296,7 +2344,7 @@ const UpBusiness: NextPage = () => {
               position: "absolute",
               top: "0px",
               left: "0px",
-              width: "459px",
+              width: "413.34px",
               height: "143px",
             }}
           >
@@ -2304,10 +2352,10 @@ const UpBusiness: NextPage = () => {
               style={{
                 position: "absolute",
                 top: "67px",
-                left: "21px",
+                left: "18.91px",
                 fontWeight: "500",
                 display: "inline-block",
-                width: "438px",
+                width: "394.43px",
                 height: "76px",
               }}
             >
@@ -2347,7 +2395,7 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "183px",
-              left: "18px",
+              left: "16.21px",
               display: "flex",
               flexDirection: "row",
               alignItems: "flex-start",
