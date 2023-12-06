@@ -56,7 +56,7 @@ const UpBusiness: NextPage = () => {
       style={{
         borderRadius: "48px",
         backgroundColor: "#000000",
-        height: "9517px",
+        height: "9585px",
         overflow: "hidden",
         textAlign: "left",
         fontSize: "24px",
@@ -192,16 +192,15 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "relative",
               fontSize: "24px",
-              color: "rgba(0, 0, 0, 0.61)",
+              // color: "rgba(0, 0, 0, 0.61)",
+              color: "#ffffff",
               display: "inline-block",
               width: "690px",
-              height: "61px",
+              height: "150px",
               flexShrink: "0",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est
-            faucibus tellus leo non pellentesque lorem vel. Arcu magna eros,
-            potenti duis.
+            At Biznalytix, we specialize in providing cutting-edge predictive analysis for businesses venturing into new locations and optimizing supply chains. Whether you're plotting expansion strategies or fine-tuning your supply chain, our predictive insights will be your guide to unparalleled success.
           </div>
         </div>
         <div
@@ -276,7 +275,9 @@ const UpBusiness: NextPage = () => {
             top: "0px",
             left: "0px",
             borderRadius: "14px",
-            backgroundColor: "rgba(220, 240, 255, 0.07)",
+            // backgroundColor: "rgba(220, 240, 255, 0.07)",
+            // backgroundColor: "rgba(233, 233, 231, 0.21)",
+            backgroundColor: "white",
             boxShadow: "0px 14px 37px -10px rgba(178, 178, 178, 0.17)",
             width: "1560px",
             height: "232px",
@@ -297,6 +298,7 @@ const UpBusiness: NextPage = () => {
               top: "0px",
               left: "35px",
               fontWeight: "600",
+              color:"black"
             }}
           >{`We working with customers brands and startups `}</div>
           <img
@@ -339,6 +341,7 @@ const UpBusiness: NextPage = () => {
             left: "79px",
             width: "1402px",
             height: "43px",
+            // backgroundColor:"rgba(248,248,248,0.08)"
           }}
         >
           <img
@@ -464,9 +467,9 @@ const UpBusiness: NextPage = () => {
                   gap: "25px",
                 }}
               >
-                <div
+                {/* <div
                   style={{ position: "relative", fontWeight: "600" }}
-                >{`Portfolio Service `}</div>
+                >{`Portfolio Service `}</div> */}
                 <b
                   style={{
                     position: "relative",
@@ -476,26 +479,25 @@ const UpBusiness: NextPage = () => {
                     width: "861px",
                   }}
                 >
-                  We help design a ecommerce business shop
+                  Why Choose Predictive Excellence With Us?
                 </b>
               </div>
             </div>
             <div
               style={{
                 position: "relative",
-                color: "rgba(0, 0, 0, 0.61)",
+                // color: "rgba(0, 0, 0, 0.61)",
+                color: "#ffffff",
                 display: "inline-block",
                 width: "657px",
-                height: "88px",
+                height: "160px",
                 flexShrink: "0",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium
-              vulputate semper sem elit magna neque. Aliquet adipisc
+              Unlock the power of data-driven decision-making with our predictive analytics. From pinpointing optimal business locations to streamlining supply chains for peak efficiency, our solutions are designed to elevate your business strategies and outcomes. Join us in transforming possibilities into realities!
             </div>
           </div>
-          <div
+          {/* <div
             style={{
               position: "relative",
               width: "238px",
@@ -578,7 +580,7 @@ const UpBusiness: NextPage = () => {
                 src="/playbuttono.svg"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div
           style={{
@@ -690,9 +692,9 @@ const UpBusiness: NextPage = () => {
                   gap: "25px",
                 }}
               >
-                <div
+                {/* <div
                   style={{ position: "relative", fontWeight: "600" }}
-                >{`Portfolio Service `}</div>
+                >Our Mission</div> */}
                 <b
                   style={{
                     position: "relative",
@@ -702,26 +704,24 @@ const UpBusiness: NextPage = () => {
                     width: "831px",
                   }}
                 >
-                  We design invesment funds website in Vietnam
+                  Our Mission
                 </b>
               </div>
             </div>
             <div
               style={{
                 position: "relative",
-                color: "rgba(0, 0, 0, 0.61)",
+                color: "#ffffff",
                 display: "inline-block",
                 width: "657px",
-                height: "88px",
+                height: "160px",
                 flexShrink: "0",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium
-              vulputate semper sem elit magna neque. Aliquet adipisc
+              At Biznalytix, our mission is to revolutionize the way businesses approach expansion and supply chain management. We are committed to providing businesses with predictive analytics that empower informed decisions, mitigate risks, and drive sustained growth.
             </div>
           </div>
-          <div
+          {/* <div
             style={{
               position: "relative",
               width: "238px",
@@ -804,7 +804,7 @@ const UpBusiness: NextPage = () => {
                 src="/playbuttono1.svg"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div
@@ -868,9 +868,9 @@ const UpBusiness: NextPage = () => {
                   gap: "25px",
                 }}
               >
-                <div style={{ position: "relative", fontWeight: "600" }}>
+                {/* <div style={{ position: "relative", fontWeight: "600" }}>
                   Portfolio Service
-                </div>
+                </div> */}
                 <b
                   style={{
                     position: "relative",
@@ -880,26 +880,24 @@ const UpBusiness: NextPage = () => {
                     width: "831px",
                   }}
                 >
-                  We help design messages app for communication
+                  Our Approach
                 </b>
               </div>
             </div>
             <div
               style={{
                 position: "relative",
-                color: "rgba(0, 0, 0, 0.61)",
+                color: "#ffffff",
                 display: "inline-block",
                 width: "657px",
                 height: "88px",
                 flexShrink: "0",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium
-              vulputate semper sem elit magna neque. Aliquet adipisc
+              Our unique approach integrates advanced predictive analysis into aspect of your business strategy. By leveraging data-driven insights, we assist you in identifying prime business locations and optimizing supply chains for maximum efficiency. Let's embark on a journey where data shapes success!
             </div>
           </div>
-          <div
+          {/* <div
             style={{
               position: "relative",
               width: "238px",
@@ -982,7 +980,7 @@ const UpBusiness: NextPage = () => {
                 src="/playbuttono2.svg"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div
           style={{
@@ -1082,9 +1080,9 @@ const UpBusiness: NextPage = () => {
                   gap: "25px",
                 }}
               >
-                <div style={{ position: "relative", fontWeight: "600" }}>
+                {/* <div style={{ position: "relative", fontWeight: "600" }}>
                   Portfolio Service
-                </div>
+                </div> */}
                 <b
                   style={{
                     position: "relative",
@@ -1094,26 +1092,24 @@ const UpBusiness: NextPage = () => {
                     width: "836px",
                   }}
                 >
-                  We help maintenance design for customers
+                  See The Future, Act Today 
                 </b>
               </div>
             </div>
             <div
               style={{
                 position: "relative",
-                color: "rgba(0, 0, 0, 0.61)",
+                color: "#ffffff",
                 display: "inline-block",
                 width: "657px",
                 height: "88px",
                 flexShrink: "0",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium
-              vulputate semper sem elit magna neque. Aliquet adipisc
+              Ready to see how predictive analysis can reshape the future of your business? Join us on a journey where predictions aren't just forecasts but blueprints for success. Let's turn data into decisive action and pave the way for your business's triumphant tomorrow.
             </div>
           </div>
-          <div
+          {/* <div
             style={{
               position: "relative",
               width: "238px",
@@ -1196,7 +1192,7 @@ const UpBusiness: NextPage = () => {
                 src="/playbuttono3.svg"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div
@@ -1241,16 +1237,14 @@ const UpBusiness: NextPage = () => {
               top: "103px",
               left: "0px",
               fontSize: "24px",
-              color: "rgba(0, 0, 0, 0.61)",
+              color: "#ffffff",
               textAlign: "center",
               display: "inline-block",
               width: "971px",
               height: "68px",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam
-            nibh elit pellentesque velit netus suspendisse. Sed enim, pretium,
-            montes, in ut dolor urna.
+            Elevate your business with our core services—Predictive Analysis for Strategic Expansion, enabling informed market entries; Supply Chain Optimization, revolutionizing efficiency through predictive insights; and Location Intelligence, harnessing the power of foresight for successful ventures. Predict the future, act decisively, and thrive with Biznalytix.
           </div>
         </div>
       </div>
@@ -1290,27 +1284,27 @@ const UpBusiness: NextPage = () => {
             style={{
               position: "absolute",
               top: "485px",
-              left: "128.69px",
+              left: "92.69px",
               fontWeight: "600",
               textAlign: "left",
               display: "inline-block",
-              width: "293.57px",
+              width: "393.57px",
             }}
           >
-            Web depelopment
+            Optimize Supply Chain 
           </div>
           <div
             style={{
               position: "absolute",
-              top: "579px",
+              top: "559px",
               left: "56.3px",
-              fontSize: "24px",
-              color: "rgba(0, 0, 0, 0.61)",
+              fontSize: "22px",
+              color: "#ffffff",
               display: "inline-block",
               width: "439.35px",
-              height: "125px",
+              height: "150px",
             }}
-          >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. `}</div>
+          >{`Explore predictive supply chain optimization forecast demand, minimize disruptions, and maximize efficiency. Uncover how predictive analytics transforms your processes, a true game-changer for business success. `}</div>
           <div
             style={{
               position: "absolute",
@@ -1378,20 +1372,20 @@ const UpBusiness: NextPage = () => {
               width: "328.76px",
             }}
           >
-            Mobile depelopment
+            Location Intelligence
           </div>
           <div
             style={{
               position: "absolute",
-              top: "579px",
+              top: "559px",
               left: "111.6px",
-              fontSize: "24px",
-              color: "rgba(0, 0, 0, 0.61)",
+              fontSize: "22px",
+              color: "#ffffff",
               display: "inline-block",
               width: "439.35px",
               height: "125px",
             }}
-          >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. `}</div>
+          >{`Grasp location intelligence's role in expansion. Learn how predictive analysis assesses new locations, identifies challenges, and informs success. `}</div>
           <div
             style={{
               position: "absolute",
@@ -1456,23 +1450,25 @@ const UpBusiness: NextPage = () => {
               fontWeight: "600",
               textAlign: "left",
               display: "inline-block",
-              width: "242.3px",
+              width: "272.3px",
             }}
           >
-            Product design
+            Maximise Profit
           </div>
           <div
             style={{
               position: "absolute",
-              top: "579px",
+              top: "559px",
               left: "101.54px",
               fontSize: "24px",
-              color: "rgba(0, 0, 0, 0.61)",
+              color: "white",
               display: "inline-block",
               width: "439.35px",
               height: "125px",
             }}
-          >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. `}</div>
+          >{`
+          
+Elevate profits, trim costs: Our strategies optimize your financial landscape, maximizing earnings and minimizing expenses for sustainable business success. `}</div>
           <div
             style={{
               position: "absolute",
@@ -1619,18 +1615,13 @@ const UpBusiness: NextPage = () => {
           >
             <p style={{ margin: "" }}>
               <span>
-                <span style={{ lineHeight: "0%" }}>
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Consectetur et pretium nunc, quis euismod et. Volutpat
-                  suspendisse sed in blandit condimentum. Sagittis nullam nec
-                  mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida
-                  lobortis in ultricies enim vulputate non. Neque nibh donec
-                  quam lectus.”
+                <span style={{ lineHeight: "0%", color:"white" }}>
+                  “Biznalytix has been instrumental in transforming our approach to business expansion. Their predictive analysis not only identified the most lucrative locations for growth but also guided us through potential challenges. Thanks to their insights, we made informed decisions that have propelled our success to new heights”
                 </span>
               </span>
             </p>
-            <p style={{ margin: "" }}>
-              <span>
+            <p style={{ margin: "10px" }}>
+              {/* <span>
                 <span style={{ lineHeight: "148.34%", fontWeight: "600" }}>
                   Sed arcu, enim eu adipiscing enim vulputate vulputate semper
                   adipiscing.
@@ -1638,7 +1629,7 @@ const UpBusiness: NextPage = () => {
                 <span
                   style={{ lineHeight: "0%", fontFamily: "Inter" }}
                 >{` `}</span>
-              </span>
+              </span> */}
               <span
                 style={{
                   lineHeight: "148.34%",
@@ -1647,7 +1638,7 @@ const UpBusiness: NextPage = () => {
                   color: "#7c76bb",
                 }}
               >
-                Customer
+              Alex Murphy
               </span>
             </p>
           </div>
@@ -1794,8 +1785,8 @@ const UpBusiness: NextPage = () => {
             }}
           >
             <span
-              style={{ lineHeight: "0%" }}
-            >{`“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum velit egestas rutrum purus. Quam velit velit nisi ultrices gravida est in tellus. Id in faucibus consequat hendrerit scelerisque maecenas massa, quis. “ - `}</span>
+              style={{ lineHeight: "0%" , color:"white"}}
+            >{`“Biznalytix provided spot-on location insights for our expansion. Predictive analysis swiftly identified challenges, enabling informed decisions that fueled our success.“ - `}</span>
             <span
               style={{
                 lineHeight: "148.34%",
@@ -1803,7 +1794,7 @@ const UpBusiness: NextPage = () => {
                 color: "#7c76bb",
               }}
             >
-              Customer
+              John Miller
             </span>
           </div>
           <div
@@ -1817,8 +1808,8 @@ const UpBusiness: NextPage = () => {
             }}
           >
             <span
-              style={{ lineHeight: "0%" }}
-            >{`“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum velit egestas rutrum purus. Quam velit velit nisi ultrices gravida est in tellus. Id in faucibus consequat hendrerit scelerisque maecenas massa, quis. “ - `}</span>
+              style={{ lineHeight: "0%" ,color:"white"}}
+            >{`“Biznalytix transformed our supply chain. Predictive strategies minimized disruptions, maximizing efficiency. Analytics are a game-changer for our business. “ - `}</span>
             <span
               style={{
                 lineHeight: "148.34%",
@@ -1826,7 +1817,7 @@ const UpBusiness: NextPage = () => {
                 color: "#7c76bb",
               }}
             >
-              Customer
+              Joe Bright
             </span>
           </div>
           <div
@@ -1840,8 +1831,8 @@ const UpBusiness: NextPage = () => {
             }}
           >
             <span
-              style={{ lineHeight: "0%" }}
-            >{`“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum velit egestas rutrum purus. Quam velit velit nisi ultrices gravida est in tellus. Id in faucibus consequat hendrerit scelerisque maecenas massa, quis. “ - `}</span>
+              style={{ lineHeight: "0%" ,color:"white" }}
+            >{`“Biznalytix elevated our market entry with precise predictions. Location intelligence and analysis navigated pitfalls, guiding us to success with informed decisions. “ - `}</span>
             <span
               style={{
                 lineHeight: "148.34%",
@@ -1849,7 +1840,7 @@ const UpBusiness: NextPage = () => {
                 color: "#7c76bb",
               }}
             >
-              Customer
+              David Murphy
             </span>
           </div>
           <div
@@ -2037,7 +2028,7 @@ const UpBusiness: NextPage = () => {
           top: "8801px",
           left: "0px",
           width: "1920px",
-          height: "865.1px",
+          height: "689px",
         }}
       >
         <div
@@ -2045,7 +2036,7 @@ const UpBusiness: NextPage = () => {
             position: "absolute",
             top: "33px",
             left: "0px",
-            backgroundColor: "#f6fbff",
+            backgroundColor: "#000000",
             width: "1920px",
             height: "683px",
           }}
@@ -2135,7 +2126,7 @@ const UpBusiness: NextPage = () => {
               style={{
                 position: "relative",
                 fontWeight: "500",
-                color: "inherit",
+                color: "white",
                 display: "inline-block",
                 width: "319px",
                 height: "33px",
@@ -2145,7 +2136,7 @@ const UpBusiness: NextPage = () => {
               href="mailto:trungkienspktnd@gamail.com"
               target="_blank"
             >
-              trungkienspktnd@gamail.com
+              biznalytix@gmail.com
             </a>
             <div
               style={{
@@ -2155,9 +2146,10 @@ const UpBusiness: NextPage = () => {
                 width: "164px",
                 height: "32px",
                 flexShrink: "0",
+                color: "white"
               }}
             >
-              207.555.0119
+              +91 9876543210
             </div>
           </div>
         </div>
@@ -2214,9 +2206,10 @@ const UpBusiness: NextPage = () => {
                   display: "inline-block",
                   width: "281px",
                   flexShrink: "0",
+                  color:"white"
                 }}
               >
-                3891 Ranchview Dr. Richardson, California 62639
+                21, Dr.v.b.gandhi Marg, Kalagoda, Fort, Mumbai 400001
               </div>
             </div>
             <div
@@ -2248,9 +2241,10 @@ const UpBusiness: NextPage = () => {
                   width: "304px",
                   height: "59px",
                   flexShrink: "0",
+                  color:"white"
                 }}
               >
-                4517 Washington Ave. Manchester, Kentucky 39495
+                 8/28 Wea, Abdul Aziz Road, Delhi 110005
               </div>
             </div>
           </div>
@@ -2280,17 +2274,17 @@ const UpBusiness: NextPage = () => {
               color: "rgba(0, 0, 0, 0.61)",
             }}
           >
-            <div style={{ position: "relative", fontWeight: "500" }}>Home</div>
-            <div style={{ position: "relative", fontWeight: "500" }}>
+            <div style={{ position: "relative", fontWeight: "500" , color:"white" }}>Home</div>
+            <div style={{ position: "relative", fontWeight: "500" , color:"white" }}>
               How we work
             </div>
-            <div style={{ position: "relative", fontWeight: "500" }}>
+            <div style={{ position: "relative", fontWeight: "500" , color:"white"}}>
               Our team
             </div>
-            <div style={{ position: "relative", fontWeight: "500" }}>
+            <div style={{ position: "relative", fontWeight: "500" , color:"white"}}>
               Pricing
             </div>
-            <div style={{ position: "relative", fontWeight: "500" }}>Legal</div>
+            <div style={{ position: "relative", fontWeight: "500"  , color:"white"}}>Legal</div>
           </div>
         </div>
         <div
@@ -2313,8 +2307,9 @@ const UpBusiness: NextPage = () => {
               display: "inline-block",
               width: "425.95px",
               height: "27px",
+              color:"white"
             }}
-          >{` © 2021 Up Business by AbellVo | All Rights Reserved `}</div>
+          >{` © 2023 Biznalytix | All Rights Reserved `}</div>
         </div>
         <div
           style={{
@@ -2345,10 +2340,10 @@ const UpBusiness: NextPage = () => {
                 display: "inline-block",
                 width: "394.43px",
                 height: "76px",
+                color:"white"
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate
-              a, ultricies sit nunc purus vel cras pellentesque.
+              Strategic Insights, Predictive Growth: Powering Your Business to New Horizons with Biznalytix
             </div>
             <div
               style={{
@@ -2372,10 +2367,10 @@ const UpBusiness: NextPage = () => {
                   flexShrink: "0",
                 }}
                 alt=""
-                src="/arrowup1.svg"
+                src="/arrowup.svg"
               />
               <div style={{ position: "relative", fontWeight: "600" }}>
-                UP BUSINESS
+                Biznalytix
               </div>
             </div>
           </div>
@@ -2391,11 +2386,11 @@ const UpBusiness: NextPage = () => {
               gap: "27px",
             }}
           >
-            <img
+            {/* <img
               style={{ position: "relative", width: "99px", height: "99px" }}
               alt=""
               src="/dribble.svg"
-            />
+            /> */}
             <img
               style={{ position: "relative", width: "99px", height: "99px" }}
               alt=""
