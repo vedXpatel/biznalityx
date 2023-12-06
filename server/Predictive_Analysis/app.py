@@ -5,6 +5,12 @@ import numpy as np
 
 app = Flask(__name__)
 
+bronx_df = pd.read_csv("static/Bronx_Combined.csv")
+kings_df = pd.read_csv("static/Kings_Combined.csv")
+ny_df = pd.read_csv("static/NY_combined.csv")
+queens_df = pd.read_csv("static/Queens_Combined.csv")
+richmond_df = pd.read_csv("static/RichMond_Combined.csv")
+
 def coordinates_data(file_name):
     coordinates = []
     csv_path = "./static/"+file_name
@@ -12,101 +18,113 @@ def coordinates_data(file_name):
 
     for ind,row in df.iterrows():
 
-        latitude = float(row['DeliveryLocation(Latitude)'])
-        longitude = float(row['DeliveryLocation(Longitude)'])
-        coordinates.append({"latitude": latitude, "longitude": longitude})
+        latitude = float(row['Latitude'])
+        longitude = float(row['Longitude'])
+        coordinates.append([latitude,longitude])
 
     return coordinates
 
-def sales_data(file_name):
-    sales = []
-    csv_path = "static/"+file_name
-    df = pd.read_csv(csv_path)
-
-    for ind,row in df.iterrows():
-        value = float(row['TotalOrderValue'])
-        sales.append(value)
-
-    return sales
-
-#!####################################################### All Order
-@app.route('/coordinates/all_orders', methods=['GET'])
-def get_all_coordinates():
+#!####################################################### Bronx
+@app.route('/coordinates/bronx', methods=['GET'])
+def get_bronx_coordinates():
 
     try:
-        coordinates = coordinates_data(file_name="food_delivery_data.csv")
+        coordinates = coordinates_data(file_name="Bronx_Combined.csv")
         return jsonify({"coordinates": coordinates})
     except Exception as e:
         return jsonify({"error": str(e)})
 
-@app.route('/sales/all_orders', methods=['GET'])
-def get_all_sales():
-
+@app.route('/coordinates/bronx_epicenters', methods=['GET'])
+def get_bronx_epicenters():
     try:
-        sales = sales_data(file_name="food_delivery_data.csv")
-        return jsonify({"sales": sales})
+        return jsonify({'1':[40.85201548282162,-73.8473937253811,35052.89],'2':[40.85188213796728,-73.85451256281453,24797.01],'3':[40.84489456629439,-73.85947729300842,17638.50]})
     except Exception as e:
         return jsonify({"error": str(e)})
 
-############################################################!Burgers
-@app.route('/coordinates/burger_orders', methods=['GET'])
-def get_burger_coordinates():
+@app.route('/metrics/bronx', methods=['GET'])
+def get_bronx_metrics():
+    try:
+        return jsonify({'Mean_Poplation':bronx_df['TotalPop'].mean(),"Mean_Income":bronx_df['Income'].mean(),"Mean_PerCapIncome" : bronx_df['IncomePerCap'].mean()})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+############################################################! Kings
+@app.route('/coordinates/kings', methods=['GET'])
+def get_kings_coordinates():
 
     try:
-        coordinates = coordinates_data(file_name="Burger_Orders.csv")
+        coordinates = coordinates_data(file_name="Kings_Combined.csv")
         return jsonify({"coordinates": coordinates})
     except Exception as e:
         return jsonify({"error": str(e)})
 
-@app.route('/sales/burger_orders', methods=['GET'])
-def get_burger_sales():
-
+@app.route('/coordinates/kings_epicenters', methods=['GET'])
+def get_kings_epicenters():
     try:
-        sales = sales_data(file_name="Burger_Orders.csv")
-        return jsonify({"sales": sales})
+        return jsonify({'1':[40.63990667624286,-73.95640703517857,75455.21],'2':[40.62653266331572,-73.95685929648143,34282.58],'3':[40.626758793971675,-73.94574120603501,27662.36],'4':[40.63716080401786,-73.94719221105713,20353.39]})
     except Exception as e:
         return jsonify({"error": str(e)})
 
-#######################################################! Pasta
-@app.route('/coordinates/pasta_orders', methods=['GET'])
-def get_pasta_coordinates():
+
+@app.route('/metrics/kings', methods=['GET'])
+def get_kings_metrics():
     try:
-        coordinates = coordinates_data(file_name="Pasta_Orders.csv")
+        return jsonify({'Mean_Poplation':kings_df['TotalPop'].mean(),"Mean_Income":kings_df['Income'].mean(),"Mean_PerCapIncome" : kings_df['IncomePerCap'].mean()})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+#######################################################! NY
+@app.route('/coordinates/ny', methods=['GET'])
+def get_ny_coordinates():
+    try:
+        coordinates = coordinates_data(file_name="NY_combined.csv")
         return jsonify({"coordinates": coordinates})
     except Exception as e:
         return jsonify({"error": str(e)})
 
-@app.route('/sales/Pasta_Orders', methods=['GET'])
-def get_pasta_sales():
-
+@app.route('/coordinates/ny_epicenters', methods=['GET'])
+def get_ny_epicenters():
     try:
-        sales = sales_data(file_name="Pasta_Orders.csv")
-        return jsonify({"sales": sales})
+        return jsonify({'1':[40.75927135678095,-73.97630653266427,128381.28],'2':[40.76896531839999,-73.97312216821803,96368.44],'3':[40.7661494974875,-73.97429962312083,41985.54],'4':[40.775308173522454,-73.9681335247653,30915.40]})
     except Exception as e:
         return jsonify({"error": str(e)})
 
-#########################################################! Pizza
-@app.route('/coordinates/pizza_orders', methods=['GET'])
-def get_pizza_coordinates():
-    
+
+@app.route('/metrics/ny', methods=['GET'])
+def get_ny_metrics():
     try:
-        coordinates = coordinates_data(file_name="Pizza_Orders.csv")
+        return jsonify({'Mean_Poplation':ny_df['TotalPop'].mean(),"Mean_Income":ny_df['Income'].mean(),"Mean_PerCapIncome" : ny_df['IncomePerCap'].mean()})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+#########################################################! Queen
+@app.route('/coordinates/queens', methods=['GET'])
+def get_queens_coordinates():
+
+    try:
+        coordinates = coordinates_data(file_name="Queens_Combined.csv")
         return jsonify({"coordinates": coordinates})
     except Exception as e:
         return jsonify({"error": str(e)})
 
-@app.route('/sales/pizza_orders', methods=['GET'])
-def get_pizza_sales():
-
+@app.route('/coordinates/queens_epicenters', methods=['GET'])
+def get_queens_epicenters():
     try:
-        sales = sales_data(file_name="Pizza_Orders.csv")
-        return jsonify({"sales": sales})
+        return jsonify({'1':[40.75927135678095,-73.97630653266427,128381.28],'2':[40.76896531839999,-73.97312216821803,96368.44],'3':[40.7661494974875,-73.97429962312083,41985.54],'4':[40.775308173522454,-73.9681335247653,30915.40]})
     except Exception as e:
         return jsonify({"error": str(e)})
 
-#####################################################!SandWhiches
-@app.route('/coordinates/sandwhiches', methods=['GET'])
-def get_sandwhiches_coordinates():
+
+@app.route('/metrics/queens', methods=['GET'])
+def get_queens_metrics():
+    try:
+        return jsonify({'Mean_Poplation':queens_df['TotalPop'].mean(),"Mean_Income":queens_df['Income'].mean(),"Mean_PerCapIncome" : queens_df['IncomePerCap'].mean()})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+#####################################################! Richmond
+@app.route('/coordinates/richmond', methods=['GET'])
+def get_richmond_coordinates():
 
     try:
         coordinates = coordinates_data(file_name="Sandwhiches_Orders.csv")
@@ -114,30 +132,20 @@ def get_sandwhiches_coordinates():
     except Exception as e:
         return jsonify({"error": str(e)})
 
-@app.route('/sales/sandwhiches', methods=['GET'])
-def get_sandwhiches_sales():
+@app.route('/coordinates/richmond_epicenter', methods=['GET'])
+def get_richmond_epicenter():
 
     try:
-        sales = sales_data(file_name="Sandwhiches_Orders.csv")
-        return jsonify({"sales": sales})
+        return jsonify({'1':[40.56391959798148,-74.11338358458518,45098.70],'2':[40.546950825553566,-74.13380653266071,40010.82],'3':[40.56366834170247,-74.13929648241606,38060.22
+],'4':[40.5642481639,-74.12528024738461,30022.48],'5':[40.5571670854375,-74.1399120603,29935.25],'6':[40.56925509902353,-74.14740762636471,18063.70]})
     except Exception as e:
         return jsonify({"error": str(e)})
 
-####################################################! Sushi
-@app.route('/coordinates/sushi', methods=['GET'])
-def get_sushi_coordinates():
-    try:
-        coordinates = coordinates_data(file_name="Sushi_Orders.csv")
-        return jsonify({"coordinates": coordinates})
-    except Exception as e:
-        return jsonify({"error": str(e)})
 
-@app.route('/sales/sushi', methods=['GET'])
-def get_sushi_sales():
-
+@app.route('/metrics/richmond', methods=['GET'])
+def get_richmond_metrics():
     try:
-        sales = sales_data(file_name="Sushi_Orders.csv")
-        return jsonify({"sales": sales})
+        return jsonify({'Mean_Poplation':richmond_df['TotalPop'].mean(),"Mean_Income":richmond_df['Income'].mean(),"Mean_PerCapIncome" : richmond_df['IncomePerCap'].mean()})
     except Exception as e:
         return jsonify({"error": str(e)})
 
