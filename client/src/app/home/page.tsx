@@ -203,7 +203,7 @@ const UpBusiness: NextPage = () => {
             At Biznalytix, we specialize in providing cutting-edge predictive analysis for businesses venturing into new locations and optimizing supply chains. Whether you're plotting expansion strategies or fine-tuning your supply chain, our predictive insights will be your guide to unparalleled success.
           </div>
         </div>
-        <div
+        {/* <div
           style={{
             display: "flex",
             flexDirection: "row",
@@ -257,7 +257,7 @@ const UpBusiness: NextPage = () => {
               src="/arrowright.svg"
             />
           </div>
-        </div>
+        </div> */}
       </div>
       <div
         style={{
@@ -277,7 +277,7 @@ const UpBusiness: NextPage = () => {
             borderRadius: "14px",
             // backgroundColor: "rgba(220, 240, 255, 0.07)",
             // backgroundColor: "rgba(233, 233, 231, 0.21)",
-            backgroundColor: "white",
+            backgroundColor: "black",
             boxShadow: "0px 14px 37px -10px rgba(178, 178, 178, 0.17)",
             width: "1560px",
             height: "232px",
@@ -287,21 +287,28 @@ const UpBusiness: NextPage = () => {
           style={{
             position: "absolute",
             top: "48px",
-            left: "427px",
-            width: "706px",
+            left: "79px",
+            width: "1402px",
             height: "36px",
+            display: "flex",
+            justifyContent: "center",
+            textAlign:"center", // Enable flex container
+            alignItems: "center", 
           }}
         >
           <div
             style={{
-              position: "absolute",
+              // position: "absolute",
               top: "0px",
               left: "35px",
-              fontWeight: "600",
-              color:"black"
+              fontWeight: "2000",
+              color:"rgb(124, 118, 187)",
+              // textAlign: "center", // Center the text horizontally
+              // Center the text vertically
+              
             }}
-          >{`We working with customers brands and startups `}</div>
-          <img
+          >{`Our Motto `}</div>
+          {/* <img
             style={{
               position: "absolute",
               height: "66.67%",
@@ -332,7 +339,7 @@ const UpBusiness: NextPage = () => {
             }}
             alt=""
             src="/chevronright.svg"
-          />
+          /> */}
         </div>
         <div
           style={{
@@ -341,69 +348,14 @@ const UpBusiness: NextPage = () => {
             left: "79px",
             width: "1402px",
             height: "43px",
+            color: "white",
+            display:"flex",
+            justifyContent:"center",
+            alignItems: "center"
             // backgroundColor:"rgba(248,248,248,0.08)"
           }}
         >
-          <img
-            style={{
-              position: "absolute",
-              top: "0px",
-              left: "0px",
-              width: "193px",
-              height: "43px",
-              objectFit: "cover",
-            }}
-            alt=""
-            src="/image-1@2x.png"
-          />
-          <img
-            style={{
-              position: "absolute",
-              top: "0px",
-              left: "330px",
-              width: "129px",
-              height: "43px",
-              objectFit: "cover",
-            }}
-            alt=""
-            src="/image-2@2x.png"
-          />
-          <img
-            style={{
-              position: "absolute",
-              top: "0px",
-              left: "596px",
-              width: "170px",
-              height: "43px",
-              objectFit: "cover",
-            }}
-            alt=""
-            src="/image-3@2x.png"
-          />
-          <img
-            style={{
-              position: "absolute",
-              top: "0px",
-              left: "903px",
-              width: "144px",
-              height: "43px",
-              objectFit: "cover",
-            }}
-            alt=""
-            src="/image-4@2x.png"
-          />
-          <img
-            style={{
-              position: "absolute",
-              top: "0px",
-              left: "1184px",
-              width: "218px",
-              height: "43px",
-              objectFit: "cover",
-            }}
-            alt=""
-            src="/image-5@2x.png"
-          />
+          "Empowering Food Retail Ventures Through Precision, Data, and Blockchain Mastery."
         </div>
       </div>
       <div
@@ -1228,7 +1180,7 @@ const UpBusiness: NextPage = () => {
             height: "171px",
           }}
         >
-          <b style={{ position: "absolute", top: "0px", left: "225px" }}>
+          <b style={{ position: "absolute", top: "0px", left: "225px" , color:"#7c76bb" }}>
             Our main services
           </b>
           <div
@@ -1305,7 +1257,7 @@ const UpBusiness: NextPage = () => {
               height: "150px",
             }}
           >{`Explore predictive supply chain optimization forecast demand, minimize disruptions, and maximize efficiency. Uncover how predictive analytics transforms your processes, a true game-changer for business success. `}</div>
-          <div
+          {/* <div
             style={{
               position: "absolute",
               top: "748px",
@@ -1326,7 +1278,7 @@ const UpBusiness: NextPage = () => {
             <div style={{ position: "relative", fontWeight: "500" }}>
               Learn more
             </div>
-          </div>
+          </div> */}
           <img
             style={{
               position: "absolute",
@@ -1386,7 +1338,7 @@ const UpBusiness: NextPage = () => {
               height: "125px",
             }}
           >{`Grasp location intelligence's role in expansion. Learn how predictive analysis assesses new locations, identifies challenges, and informs success. `}</div>
-          <div
+          {/* <div
             style={{
               position: "absolute",
               top: "748px",
@@ -1407,7 +1359,7 @@ const UpBusiness: NextPage = () => {
             <div style={{ position: "relative", fontWeight: "500" }}>
               Learn more
             </div>
-          </div>
+          </div> */}
           <img
             style={{
               position: "absolute",
@@ -1469,7 +1421,7 @@ const UpBusiness: NextPage = () => {
           >{`
           
 Elevate profits, trim costs: Our strategies optimize your financial landscape, maximizing earnings and minimizing expenses for sustainable business success. `}</div>
-          <div
+          {/* <div
             style={{
               position: "absolute",
               top: "748px",
@@ -1490,7 +1442,7 @@ Elevate profits, trim costs: Our strategies optimize your financial landscape, m
             <div style={{ position: "relative", fontWeight: "500" }}>
               Learn more
             </div>
-          </div>
+          </div> */}
           <img
             style={{
               position: "absolute",
@@ -1544,7 +1496,7 @@ Elevate profits, trim costs: Our strategies optimize your financial landscape, m
             transformOrigin: "0 0",
           }}
         />
-        <b style={{ position: "absolute", top: "102px", left: "0px" }}>
+        <b style={{ position: "absolute", top: "102px", left: "0px" , color:"#7c76bb"}}>
           Testimonials
         </b>
       </div>
@@ -1961,7 +1913,7 @@ Elevate profits, trim costs: Our strategies optimize your financial landscape, m
             transformOrigin: "0 0",
           }}
         />
-        <b style={{ position: "absolute", top: "130px", left: "213.39px" }}>
+        <b style={{ position: "absolute", top: "130px", left: "213.39px" , color :"#7c76bb" }}>
           Start your business now !!!
         </b>
         <div
@@ -1984,13 +1936,13 @@ Elevate profits, trim costs: Our strategies optimize your financial landscape, m
             top: "191px",
             left: "165.39px",
             width: "938px",
-            height: "703px",
+            height: "853px",
             objectFit: "cover",
           }}
           alt=""
           src="/shopping-1@2x.png"
         />
-        <div
+        {/* <div
           style={{
             position: "absolute",
             top: "879px",
@@ -2020,7 +1972,7 @@ Elevate profits, trim costs: Our strategies optimize your financial landscape, m
             alt=""
             src="/arrowright3.svg"
           />
-        </div>
+        </div> */}
       </div>
       <div
         style={{
