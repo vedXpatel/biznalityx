@@ -1,11 +1,37 @@
 "use client";
 import Map from "../../components/map";
 import Stats from "../../components/stats";
-import {Input, Button} from "@nextui-org/react";
+import {Input, Button, Autocomplete, AutocompleteItem   } from "@nextui-org/react";
 import bg from '../../../public/images/dashboardBG.png';
 import Link from 'next/link';
+import {getMetrics, getData} from "@/components/data";
+import * as React from 'react';
 
 export default function Dashboard() {
+
+    const [coordinates, setCoordinates] = React.useState<Array<Array<number>>> ([]);
+    const [metrics, setMetrics] = React.useState<Object | undefined>({});
+    const [selectedCounty, setSelectedCounty] = React.useState<string>('ny');
+
+    const counties = [
+        {label: 'Bronx', value: 'bronx'},
+        {label: 'Kings', value: 'kings'},
+        {label: 'NY', value: 'ny'},
+        {label: 'Queens', value: 'queens'},
+        {label: 'Richmond', value: 'richmond'},
+    ]
+
+    React.useEffect(() => {
+        getMetrics({county: selectedCounty})
+            .then((response) => setMetrics(response))
+            .catch((error) => console.error(error));
+        getData({county: selectedCounty})
+            .then((response) => setCoordinates(response))
+            .catch((error) => console.error(error));
+    },[selectedCounty])
+
+        console.log(metrics);
+        console.log(coordinates);
     return (
         <>
             <div className="" style={{display: "flex", flexDirection: "row"}}>
@@ -59,10 +85,11 @@ export default function Dashboard() {
                      }}>
                     <div className="input"
                          style={{paddingLeft: '50px', paddingRight: '50px', marginTop: '20px', marginBottom: '20px'}}>
-                        <Input
-                            label="Search"
-                            isClearable
-                            radius="lg"
+                        <Autocomplete
+                            defaultItems={counties}
+                            label="County / City"
+                            placeholder="Search a county"
+                            onSelectinonChange={(value: string)=>setSelectedCounty(value)}
                             classNames={{
                                 label: "text-black/50 dark:text-white/90",
                                 input: [
@@ -84,7 +111,6 @@ export default function Dashboard() {
                                     "!cursor-text",
                                 ],
                             }}
-                            placeholder="Type to search..."
                             startContent={
                                 <svg
                                     aria-hidden="true"
@@ -111,7 +137,62 @@ export default function Dashboard() {
                                     />
                                 </svg>
                             }
-                        />
+                        >
+                            {(county) => <AutocompleteItem key={county.value}>{county.label}</AutocompleteItem>}
+                        </Autocomplete>
+                        {/*<Input*/}
+                        {/*    label="Search"*/}
+                        {/*    isClearable*/}
+                        {/*    radius="lg"*/}
+                        {/*    classNames={{*/}
+                        {/*        label: "text-black/50 dark:text-white/90",*/}
+                        {/*        input: [*/}
+                        {/*            "bg-transparent",*/}
+                        {/*            "text-black/90 dark:text-white/90",*/}
+                        {/*            "placeholder:text-default-700/50 dark:placeholder:text-white/60",*/}
+                        {/*        ],*/}
+                        {/*        innerWrapper: "bg-transparent",*/}
+                        {/*        inputWrapper: [*/}
+                        {/*            "shadow-xl",*/}
+                        {/*            "bg-default-200/50",*/}
+                        {/*            "dark:bg-default/60",*/}
+                        {/*            "backdrop-blur-xl",*/}
+                        {/*            "backdrop-saturate-200",*/}
+                        {/*            "hover:bg-default-200/70",*/}
+                        {/*            "dark:hover:bg-default/70",*/}
+                        {/*            "group-data-[focused=true]:bg-default-200/50",*/}
+                        {/*            "dark:group-data-[focused=true]:bg-default/60",*/}
+                        {/*            "!cursor-text",*/}
+                        {/*        ],*/}
+                        {/*    }}*/}
+                        {/*    placeholder="Type to search..."*/}
+                        {/*    startContent={*/}
+                        {/*        <svg*/}
+                        {/*            aria-hidden="true"*/}
+                        {/*            fill="none"*/}
+                        {/*            focusable="false"*/}
+                        {/*            height="1em"*/}
+                        {/*            role="presentation"*/}
+                        {/*            viewBox="0 0 24 24"*/}
+                        {/*            width="1em"*/}
+                        {/*        >*/}
+                        {/*            <path*/}
+                        {/*                d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"*/}
+                        {/*                stroke="currentColor"*/}
+                        {/*                strokeLinecap="round"*/}
+                        {/*                strokeLinejoin="round"*/}
+                        {/*                strokeWidth="2"*/}
+                        {/*            />*/}
+                        {/*            <path*/}
+                        {/*                d="M22 22L20 20"*/}
+                        {/*                stroke="currentColor"*/}
+                        {/*                strokeLinecap="round"*/}
+                        {/*                strokeLinejoin="round"*/}
+                        {/*                strokeWidth="2"*/}
+                        {/*            />*/}
+                        {/*        </svg>*/}
+                        {/*    }*/}
+                        {/*/>*/}
                     </div>
                     <div className="" style={{
                         display: 'flex',
@@ -125,7 +206,7 @@ export default function Dashboard() {
                         <Stats title='Average Income' data={500000}/>
                         <Stats title='Most Populated Area' data={1}/>
                     </div>
-                    <Map/>
+                    <Map pinData={coordinates}/>
                 </div>
             </div>
         </>
