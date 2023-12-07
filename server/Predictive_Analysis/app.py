@@ -132,7 +132,7 @@ def get_richmond_coordinates():
     except Exception as e:
         return jsonify({"error": str(e)})
 
-@app.route('/coordinates/richmond_epicenter', methods=['GET'])
+@app.route('/coordinates/richmond_epicenters', methods=['GET'])
 def get_richmond_epicenter():
 
     try:

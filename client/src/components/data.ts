@@ -1,3 +1,4 @@
+'use client';
 import axios from 'axios';
 
 interface coordinates {
@@ -25,4 +26,13 @@ export const getMetrics = async({county}:metrics) => {
         catch(err: any) {
             console.error(`Error: ${err.message}`);
         }
+}
+
+export const getEpicenters = async({county}:coordinates) => {
+    try {
+        const response = await axios.get('http://localhost:5000/coordinates/' + county + '_epicenters');
+        return response.data;
+    } catch (err: any) {
+        console.error(`Error: ${err.message}`);
+    }
 }

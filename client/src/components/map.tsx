@@ -22,7 +22,8 @@ export default function SimpleMap({pinData}: Map) {
         },
         zoom: 11,
     };
-
+    // console.log(pinData);
+    
     return (
         // Important! Always set the container height explicitly
         <div
@@ -42,6 +43,11 @@ export default function SimpleMap({pinData}: Map) {
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
             >
+                <AnyReactComponent
+                                lat={40.7128}
+                                lng={-74.006}
+                                text="My Marker"
+                            />
                 {
                     pinData.map((data, index) => {
                         return (
