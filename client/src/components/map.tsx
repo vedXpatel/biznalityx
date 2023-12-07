@@ -1,5 +1,6 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
+import { FaLocationDot } from "react-icons/fa6";
 
 interface ReactComponent {
     text: string;
@@ -11,7 +12,7 @@ interface Map {
     centreLong?: number;
 }
 
-const AnyReactComponent = ({text}: ReactComponent) => <div>{text}</div>;
+const AnyReactComponent = ({text}: ReactComponent) => <FaLocationDot style={{ color:'red'}}/>;
 
 export default function SimpleMap({pinData}: Map) {
     const defaultProps = {
