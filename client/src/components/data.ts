@@ -13,7 +13,7 @@ export const getData = async({county}:coordinates) => {
         const response = await axios.get('http://localhost:5000/coordinates/' + county);
         return response.data.coordinates;
     } catch (err: any) {
-        alert(`Error: ${err.message}`);
+        console.error(`Error: ${err.message}`);
     }
 }
 
@@ -23,6 +23,6 @@ export const getMetrics = async({county}:metrics) => {
         return response.data;
     }
         catch(err: any) {
-            alert(`Error: ${err.message}`);
+            console.error(`Error: ${err.message}`);
         }
 }
