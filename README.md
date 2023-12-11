@@ -1,6 +1,7 @@
 ## Biznalytix
 
- An integrated application the combines business applications.
+An integrated application the combines business applications.
+
  <ol>
  <li>
  Predictive Analysis:
