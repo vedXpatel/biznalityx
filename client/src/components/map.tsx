@@ -8,13 +8,16 @@ interface ReactComponent {
 
 interface Map {
     pinData: Array<Array<number>>;
+    ep?: Array<any> ;
     centreLat?: number;
     centreLong?: number;
+    height?:string;
 }
 
 const AnyReactComponent = ({text}: ReactComponent) => <FaLocationDot style={{ color:'red'}}/>;
+const EpiCenterComponent = ({text}: ReactComponent) => <FaLocationDot style={{ color:'blue'}}/>;
 
-export default function SimpleMap({pinData}: Map) {
+export default function SimpleMap({pinData, ep, height}: Map) {
     const defaultProps = {
         center: {
             lat: 40.7128,
@@ -22,13 +25,13 @@ export default function SimpleMap({pinData}: Map) {
         },
         zoom: 11,
     };
-    // console.log(pinData);
+    console.log(ep);
     
     return (
         // Important! Always set the container height explicitly
         <div
             style={{
-                height: "63vh",
+                height: height,
                 position: "relative",
                 // top: "35vh",
                 margin: "10px",
@@ -60,7 +63,19 @@ export default function SimpleMap({pinData}: Map) {
                         )
                     })
                 }
-            </GoogleMapReact>
+                {
+                   ep && ep.length>0 && ep.map((data,index)=>{
+                    return(
+                        <EpiCenterComponent
+                        key={index}
+                        lat={data[0]}
+                        lng={data[1]}
+                        text="My Marker"
+                        />
+                    )
+                   })
+                }
+                </GoogleMapReact>
         </div>
     );
 }

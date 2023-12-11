@@ -2,6 +2,9 @@ import type { NextPage } from "next";
 import {  Navbar,   NavbarBrand,   NavbarContent,   NavbarItem,   NavbarMenuToggle,  NavbarMenu,  NavbarMenuItem} from "@nextui-org/react";
 import Link from 'next/link';
 import {Button, ButtonGroup} from "@nextui-org/react";
+import { RegisterLink, LoginLink } from "@kinde-oss/kinde-auth-nextjs/server";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
+
 
 
 const UpBusiness: NextPage = () => {
@@ -43,11 +46,13 @@ const UpBusiness: NextPage = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+        <Button color="primary" variant="flat">
+              <LoginLink postLoginRedirectURL="/home">Sign in</LoginLink>
+        </Button>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+          <Button color="primary" variant="flat">
+          <RegisterLink postLoginRedirectURL="/home">Sign up</RegisterLink>
           </Button>
         </NavbarItem>
       </NavbarContent>

@@ -4,7 +4,7 @@ import Stats from "../../components/stats";
 import {Input, Button, Autocomplete, AutocompleteItem   } from "@nextui-org/react";
 import bg from '../../../public/images/dashboardBG.png';
 import Link from 'next/link';
-import {getMetrics, getData} from "@/components/data";
+import {getMetrics, getData, getEpicenters} from "@/components/data";
 import * as React from 'react';
 import {Spinner} from "@nextui-org/react";
 import {Switch} from "@nextui-org/react";
@@ -18,6 +18,7 @@ export default function Interactive(){
     const [priority, setPriority] = React.useState<number>(200);
     const [priorityCoordinates, setPriorityCoordinates] = React.useState<Array<Array<number>>> ([]);
     const [epicenters, setEpicenters] = React.useState<boolean>(false);
+    const [epArray, setEpArray] = React.useState<Array<any>>([]);
 
     const counties = [
         {label: 'Bronx', value: 'bronx'},
@@ -45,6 +46,13 @@ export default function Interactive(){
             .catch((error) => console.error(error));
     },[])
 
+    React.useEffect(() => {
+        epicenters && getEpicenters({county: selectedCounty})
+        .then((response) => setEpArray(response))
+        .catch((error) => console.error(error));
+        !epicenters && setEpArray({});
+    },[epicenters,selectedCounty])
+
 
     React.useEffect(() => {
         priority > 0 && setPriorityCoordinates(coordinates.slice(0,priority));
@@ -70,7 +78,7 @@ export default function Interactive(){
                         paddingTop: '10%'
                     }}
                 >
-                    <Button variant='light' color='danger'
+                    <Button as={Link} href="/" variant='light' color='danger'
                             style={{borderRadius: '30px', height: '7vh', fontSize: '20px', margin: 15,}}>Home</Button>
                     <Button as={Link} href="/dashboard" variant='light' color='danger' style={{
                         borderRadius: '30px',
@@ -167,13 +175,13 @@ export default function Interactive(){
                             {(county) => <AutocompleteItem key={county.value}>{county.label}</AutocompleteItem>}
                         </Autocomplete>
                         <Input onValueChange={(value)=> setPriority(+value)} type="number" label="Priority" placeholder="Enter Top Priority Number"/>
-                        <Switch onValueChange={(isSelected:boolean) => setEpicenters(isSelected)}>
+                        <Switch onValueChange={(isSelected:boolean) => setEpicenters(isSelected)} style={{marginLeft:"5vw"}}>
                         EpiCenters
                         </Switch>
                         </div>
                     {
-                        priorityCoordinates.length>0 || coordinates.length>0 ?
-                        <Map pinData={priorityCoordinates}/>
+                        priorityCoordinates.length>0 || coordinates.length>0 || epArray.length>0 ?
+                        <Map pinData={priorityCoordinates} ep={epArray} height='80vh' />
                         :
                         <div style={{top:'20vh',left:'40vw',position:'relative'}}>
                             <Spinner size="lg"/>

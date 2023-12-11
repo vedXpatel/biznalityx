@@ -59,7 +59,7 @@ export default function Dashboard() {
                         paddingTop: '10%'
                     }}
                 >
-                    <Button variant='light' color='danger'
+                    <Button as={Link} href="/" variant='light' color='danger'
                             style={{borderRadius: '30px', height: '7vh', fontSize: '20px', margin: 15,}}>Home</Button>
                     <Button variant='shadow' color='danger' style={{
                         borderRadius: '30px',
@@ -222,7 +222,7 @@ export default function Dashboard() {
                     </div>
                     {
                         coordinates.length>0 ?
-                        <Map pinData={coordinates}/>
+                        <Map pinData={coordinates} height="63vh"/>
                         :
                         <div style={{top:'20vh',left:'40vw',position:'relative'}}>
                             <Spinner size="lg"/>
