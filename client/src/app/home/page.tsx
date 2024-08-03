@@ -3,15 +3,11 @@ import {
   Navbar,
   NavbarBrand,
   NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
+  NavbarItem
 } from "@nextui-org/react";
 import Link from "next/link";
 import { Button, ButtonGroup } from "@nextui-org/react";
 import { RegisterLink, LoginLink } from "@kinde-oss/kinde-auth-nextjs/server";
-import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 const UpBusiness: NextPage = () => {
   return (
